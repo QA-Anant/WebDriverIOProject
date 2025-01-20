@@ -52,8 +52,7 @@ export const config: WebdriverIO.Config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-        browserName: 'firefox',
-        "wdio:enforceWebDriverClassic": true
+        browserName: 'chrome'
     }],
 
     //
