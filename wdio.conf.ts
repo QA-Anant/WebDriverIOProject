@@ -27,7 +27,7 @@ export const config: WebdriverIO.Config = {
     ],
     // Patterns to exclude.
     exclude: [
-        // 'path/to/excluded/files'
+         './test/specs/test2.e2e.ts'
     ],
     //
     // ============
@@ -51,9 +51,16 @@ export const config: WebdriverIO.Config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
-    capabilities: [{
+
+    capabilities: [
+        {
         browserName: 'chrome'
-    }],
+        },
+        // {
+        // browserName: 'firefox'
+        // }   
+
+    ],
 
     //
     // ===================
@@ -125,7 +132,7 @@ export const config: WebdriverIO.Config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],
+    reporters: [['allure',{outputDir: 'allure-results'}]],
 
     // Options to be passed to Jasmine.
     jasmineOpts: {
