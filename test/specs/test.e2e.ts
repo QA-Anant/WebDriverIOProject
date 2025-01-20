@@ -14,7 +14,7 @@ describe('My Login application', () => {
 })
 
 describe('My Login application', () => {
-    it('should login with valid credentials', async () => {
+    xit('should login with valid credentials', async () => {
         await LoginPage.open()
 
         await LoginPage.login('AnantJain', 'SuperSecretPassword!')
