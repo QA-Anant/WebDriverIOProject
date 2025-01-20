@@ -10,6 +10,11 @@ describe('My Login application', () => {
         await expect(SecurePage.flashAlert).toBeExisting()
         await expect(SecurePage.flashAlert).toHaveText(
             expect.stringContaining('You logged into a secure area!'))
+        // add a popup to the page and close it 
+        await browser.execute('window.open("https://www.google.com")')
+        await browser.switchWindow('https://www.google.com')
+        await browser.closeWindow()
+        await browser.switchWindow('https://the-internet.herokuapp.com/secure')
     })
 })
 
