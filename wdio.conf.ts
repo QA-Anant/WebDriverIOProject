@@ -26,9 +26,9 @@ export const config: WebdriverIO.Config = {
         './test/specs/**/*.ts'
     ],
     // Patterns to exclude.
-    exclude: [
-         './test/specs/test2.e2e.ts'
-    ],
+    // exclude: [
+    //      './test/specs/test2.e2e.ts'
+    // ],
     //
     // ============
     // Capabilities
