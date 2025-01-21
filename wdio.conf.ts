@@ -56,9 +56,9 @@ export const config: WebdriverIO.Config = {
         {
         browserName: 'chrome'
         },
-        // {
-        // browserName: 'firefox'
-        // }   
+        {
+        browserName: 'firefox'
+        }   
 
     ],
 
