@@ -23,7 +23,7 @@ export const config: WebdriverIO.Config = {
     // of the config file unless it's absolute.
     //
     specs: [
-        './test/specs/test2.e3e.ts'
+        './test/specs/smartDriveTests/test1.ts'
     ],
     // Patterns to exclude.
     // exclude: [
@@ -93,7 +93,7 @@ export const config: WebdriverIO.Config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    // baseUrl: 'http://localhost:8080',
+    baseUrl: 'https://secure-qa2.smartdrivesystems.com',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
